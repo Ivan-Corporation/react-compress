@@ -4,8 +4,7 @@
   "description": "Easy way to compress your JS bundle when you compile build folder",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "prepare": "husky install"
+    "test": "jest"
   },
   "bin": {
     "react-compress": "index.js"
@@ -31,8 +30,7 @@
   "homepage": "https://github.com/Ivan-Corporation/react-compress#readme",
   "devDependencies": {
     "jest": "^27.3.1",
-    "prettier": "^2.4.1",
-    "husky": "^7.0.4"
+    "prettier": "^2.4.1"
   },
   "dependencies": {
     "app-root-path": "^3.0.0",
