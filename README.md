@@ -9,19 +9,20 @@
 # React-compress
 
 ### This compress library was made with Brotli and Gzip help, for React users who want to make website more performance and reduce JS bundle code without problems like this:
-<img src='./1.png'>
+<img src='https://pbs.twimg.com/media/FLdahMPXIAErcnh?format=png&name=small'>
 
-ll as dev
+<br/>
+
+
+# Usage
+Install library into your project `(with npm or yarn)`, how `dev`:
 ```bash
 npm i react-compress --save-dev
 ---
 yarn add react-compress -D
 ```
 
-
-## Usage
-
-Just add react compress in your `package.json` build script like below:
+And then just add react compress in your `package.json` build script like below:
 
 ```diff
 -   "build": "react-scripts build",
@@ -35,4 +36,17 @@ npm run build
 yarn run build
 ```
 
-## Example
+# Example
+## `Before react-compress:`
+<img src='https://pbs.twimg.com/media/FLdahMRXwAIsz8X?format=png&name=small'>
+
+---
+## `Build script with this library:`
+<img src='https://pbs.twimg.com/media/FLdahMJX0AUluYh?format=png&name=small'>
+
+
+---
+## `After react-compress:`
+<img src='https://pbs.twimg.com/media/FLdahMJX0AUluYh?format=png&name=small'>
+
+

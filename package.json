@@ -1,6 +1,6 @@
 {
   "name": "react-compress",
-  "version": "2.4.0",
+  "version": "2.5.2",
   "description": "Easy way to compress your JS bundle when you compile build folder",
   "main": "index.js",
   "scripts": {
