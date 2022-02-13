@@ -1,78 +1,37 @@
-# CompressJS
+[![NPM](https://img.shields.io/npm/v/repository-metrics.svg)](https://www.npmjs.com/package/repository-metrics)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![NPM](https://img.shields.io/npm/l/repository-metrics)
+![npm](https://img.shields.io/npm/dm/repository-metrics)
+![GitHub stars](https://img.shields.io/github/stars/Ivan-Corporation/github-repository-metrics?style=social)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/repository-metrics)
+
+
+# Repository metrics for ```react```
+
+## This beauty and easy ``(4KB)`` react component can help you ``add metrics`` to your repositories also you can ```change component theme on light/dark```
+----
+## Install as dev
+```bash
+npm i react-compress --save-dev
+---
+yarn add react-compress -D
+```
+
 
 ## Usage
 
-##### 0) Create your app using create-react-app
-
-#### 1) Installation
-
-Install the package as a dev dependency:
-
-```bash
-npm install react-compress --save-dev
-```
-
-#### 2) Usage
-
-Edit your app's build script in `package.json`:
+Just add react compress in your `package.json` build script like below:
 
 ```diff
-  "scripts": {
-    "start": "react-scripts start",
 -   "build": "react-scripts build",
 +   "build": "react-scripts build && react-compress",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  }
 ```
-
-###### Custom build directory
-
-Since version `1.1.0`, you can optionally provide a path to your build directory by adding `-d` or `--directory` argument to the command in your `package.json`:
-
-```bash
-...
-"build": "react-scripts build && react-compress -d /path/to/build",
-...
-```
-
-The default build path is `/build`. The provided custom path should be a relative path from your project's **root directory**.
-
-###### Custom configuration
-
-Since version `1.2.0`, you can optionally create a configuration file `react-compress.json`:
-
-```json
-{
-  "algorithms": ["br", "gz"],
-  "filetypes": [
-    ".html",
-    ".js",
-    ".css",
-    ".svg",
-    ".png",
-    ".jpg",
-    ".mp3",
-    ".wav",
-    ".tff",
-    ".woff2",
-    ".map"
-  ],
-  "directory": "/build"
-}
-```
-
-By default, react-compress looks for `react-compress-json` in the project root but you may also provide a custom path to the config file by adding `-c` or `--config` argument to the command in your `package.json`:
-
-```bash
-...
-"build": "react-scripts build && react-compress -c /path/to/configfile",
-...
-```
-
-#### 3) Build your app just like you normally would
+And then just `run script build` like you always do:
 
 ```bash
 npm run build
+---
+yarn run build
 ```
 
+## Example
