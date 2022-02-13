@@ -1,0 +1,41 @@
+{
+  "name": "react-compress",
+  "version": "2.2.0",
+  "description": "Easy way to compress your JS bundle when you compile build folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "bin": {
+    "react-compress": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan-Corporation/react-compress.git"
+  },
+  "keywords": [
+    "compress",
+    "brotli",
+    "gzip",
+    "react",
+    "react-compress",
+    "build",
+    "minify-javascript"
+  ],
+  "author": "KomaHuman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ivan-Corporation/react-compress/issues"
+  },
+  "homepage": "https://github.com/Ivan-Corporation/react-compress#readme",
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "husky": "^7.0.4"
+  },
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "yargs": "^17.2.1"
+  }
+}
