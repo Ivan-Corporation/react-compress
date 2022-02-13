@@ -9,7 +9,7 @@
 # React-compress
 
 ### This compress library was made with Brotli and Gzip help, for React users who want to make website more performance and reduce JS bundle code without problems like this:
-
+<img src='./1.png'>
 
 ll as dev
 ```bash
