@@ -1,11 +1,12 @@
 const fs = require('fs');
 
-const getCombinedSize = (arrayOfFiles) => {
+const getCombinedSize = (arrayOfFiles:any) => {
   let totalSize = 0;
-  arrayOfFiles.forEach((filePath) => {
+  arrayOfFiles.forEach((filePath:any) => {
     totalSize += fs.statSync(filePath).size;
   });
   return totalSize;
 };
 
 module.exports = getCombinedSize;
+export {}

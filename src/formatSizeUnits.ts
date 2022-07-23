@@ -1,4 +1,4 @@
-const formatSizeUnits = (bytes) => {
+const formatSizeUnits = (bytes:number) => {
   if (bytes >= 1073741824) {
     return (bytes / 1073741824).toFixed(2) + ' GB';
   }
@@ -18,3 +18,4 @@ const formatSizeUnits = (bytes) => {
 };
 
 module.exports = formatSizeUnits;
+export {}

@@ -20,8 +20,8 @@ const compressors = {
   },
 };
 
-const startCompressingFile = (file, algorithm) => {
-  return new Promise(async (resolve, reject) => {
+const startCompressingFile = (file:any, algorithm:any) => {
+  return new Promise<void>(async (resolve, reject) => {
     try {
       const buffer = await readFile(file);
       const { func, options } = compressors[algorithm];
@@ -51,3 +51,4 @@ module.exports = {
   startCompressingAll,
   supportedAlgorithms,
 };
+export {}

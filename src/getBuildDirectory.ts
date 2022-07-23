@@ -3,7 +3,7 @@ const path = require('path');
 const appRoot = require('app-root-path').path;
 const args = require('./args');
 const defaultConfig = require('./defaultConfig');
-const config = require('./getConfig');
+const config = require('./config/getConfig');
 
 const getBuildDirectory = () => {
   const relativeBuildPath =
@@ -25,3 +25,4 @@ const getBuildDirectory = () => {
 };
 
 module.exports = getBuildDirectory;
+export {}

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const config = require('./getConfig');
+const config = require('./config/getConfig');
 const getBuildDirectory = require('./getBuildDirectory');
 const getFiles = require('./getFiles');
 const printResult = require('./printResult');
@@ -15,7 +15,7 @@ const compress = async () => {
 Compressing build files...
     `);
 
-  algorithms.forEach(async (algorithm) => {
+  algorithms.forEach(async (algorithm:any) => {
     await startCompressingAll(filesToCompress, algorithm);
     printResult(buildDir, algorithm, filesToCompress);
   });

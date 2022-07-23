@@ -17,3 +17,4 @@ var argv = require('yargs/yargs')(process.argv.slice(2))
   .alias('help', 'h').argv;
 
 module.exports = argv;
+export {}

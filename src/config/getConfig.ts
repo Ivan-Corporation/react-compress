@@ -1,14 +1,18 @@
 const fs = require('fs');
 const path = require('path');
 const appRoot = require('app-root-path').path;
-const args = require('./args');
-const supportedAlgorithms = require('./compress').supportedAlgorithms;
+const args = require('../args');
+const supportedAlgorithms = require('../compress').supportedAlgorithms;
 const defaultConfig = require('./defaultConfig');
 const configFilePath = args.config;
 
-const validateAlgorithms = (key, config) => {
-  if (key === 'algorithms') {
-    for (const algorithm of config[key]) {
+
+
+
+
+const validateAlgorithms = (check:any, config:any) => {
+  if (check === 'algorithms') {
+    for (const algorithm of config[check]) {
       if (!supportedAlgorithms.includes(algorithm)) {
         throw new Error(
           `[react-compress]: The algorithm '${algorithm}' is not supported.`
@@ -18,15 +22,15 @@ const validateAlgorithms = (key, config) => {
   }
 };
 
-const validateConfigs = (config) => {
-  for (const key in config) {
-    if (!Object.hasOwnProperty.call(defaultConfig, key)) {
+const validateConfigs = (config:any) => {
+  for (const check in config) {
+    if (!Object.hasOwnProperty.call(defaultConfig, check)) {
       throw new Error(
-        `[react-compress]: The option '${key}' does not exists.`
+        `[react-compress]: The option '${check}' does not exists.`
       );
     }
 
-    validateAlgorithms(key, config);
+    validateAlgorithms(check, config);
   }
 };
 
@@ -46,3 +50,4 @@ const getConfig = () => {
 /** @type {{filetypes:string[], directory: string, algorithms:string[]}} */
 const config = getConfig();
 module.exports = config;
+export {}
